@@ -62,7 +62,7 @@ export default function Product(){
         </tr>)
     })
     return (<div>
-        <table border='1'><thead><tr><td>id</td><td>name</td><td>price</td><td></td></tr></thead>
+        <table border='1'><thead><tr><td>id</td><td>name</td><td>price</td><td>delete</td><td>edit</td></tr></thead>
         <tbody>{show_products}</tbody>
         </table>
         Product name : <input type="text" name ='product_name' ref={myInputRef1}/>
