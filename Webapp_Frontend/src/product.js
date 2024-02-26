@@ -40,7 +40,6 @@ export default function Product(){
     }
     const onUpdate=(id)=>{
         const data={
-            // id:{id},
             name:myInputRef1.current.value,
             price:myInputRef2.current.value
         }
@@ -59,7 +58,7 @@ export default function Product(){
         return (<tr key={item._id}><td>{item._id}</td><td>{item.name}</td>
         <td>{item.price}</td>
         <td><button onClick={onDelete.bind(this, item._id)}>delete</button></td>
-        <td><button onClick={onUpdate.bind(this, item._id)}>OK ot Edit</button></td>
+        <td><button onClick={onUpdate.bind(this, item._id)}>OK to Edit</button></td>
         </tr>)
     })
     return (<div>
@@ -71,6 +70,5 @@ export default function Product(){
         Price : <input type="text" name ='product_price' ref={myInputRef2}/>
         <br/>
         <button onClick={onAddProduct.bind(this)}>Add</button>
-        {/* <button >Add</button> */}
     </div>)
 }
